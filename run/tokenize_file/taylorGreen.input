@@ -1,0 +1,47 @@
+
+CASE
+Taylorgreen
+casename
+end
+
+!DUMPRESTART        !  uncomment to time I/O
+end
+
+TIME
+dt 0.000001
+   0.000006
+end
+
+GRIDSIZE
+32 32 32            !  (Nx,Ny,Nz)
+end
+
+GEOMETRY
+x
+min     0.0
+max     6.283185307179586
+face
+periodic
+y
+min     0.0
+max     6.283185307179586
+face
+periodic
+z
+min     0.0
+max     6.283185307179586
+face
+periodic
+end
+
+GAS
+1.66666667  1.0  0.7
+0.0  1.0
+end
+
+SHOCKSENSOR
+!pureshock              !  uncomment to run with WENO scheme
+end
+
+END_INPUT
+

@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Create Fortran Program and Run Directory",
+            "type": "shell",
+            "command": "mkdir -p \"${workspaceFolder}/run/${input:programName}\" && touch \"${workspaceFolder}/${input:programName}.f90\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "programName",
+            "type": "promptString",
+            "description": "Enter the program name"
+        }
+    ]
+}

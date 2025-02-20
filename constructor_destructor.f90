@@ -13,7 +13,6 @@ module m_grid
         procedure :: finalize => t_grid_deconstructor
     end type t_grid
 
-    ! constructor
 contains
 
     subroutine t_grid_contructor_fromsize(this, nx, ny)
